@@ -129,7 +129,7 @@ const styles = StyleSheet.create({
 
 const CustomMemberItem = withSettings(MemberItem);
 
-export const applyCustomCode = (externalCodeSetup: any) => {
+export const applyCustomCode = (externalCodeSetup) => {
 	// call custom code api here
 	externalCodeSetup.membersListHooksApi.setMemberItemComponent(props => {
 		return <CustomMemberItem {...props} />
